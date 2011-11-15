@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:FluidSurface="Willcraftia.Xna.Foundation.Content.Pipeline.FluidSurface">
+  <Asset Type="FluidSurface:FluidSurface">
+    <Effect />
+    <DiffuseColor>0.6784314 0.8470588 0.9019608</DiffuseColor>
+    <EmissiveColor>0 0 0</EmissiveColor>
+    <SpecularColor>1 1 1</SpecularColor>
+    <SpecularPower>1</SpecularPower>
+    <MinAlpha>0.5</MinAlpha>
+    <MaxAlpha>0.9</MaxAlpha>
+    <DistanceAlphaFactor>0.01</DistanceAlphaFactor>
+    <SpringPower>0.2</SpringPower>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EF03E81-710E-4FD4-9BCB-F18C2C1CC95E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Willcraftia.Content.Studio.Plugin</RootNamespace>
+    <AssemblyName>Willcraftia.Content.Studio.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=1.3.3571.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\AvalonDock 1.3 (Build 3571)\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4, Version=3.0.0.30125, Culture=neutral, PublicKeyToken=6fcde8ddc3781e3e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GaraSoft\GalaSoft.MvvmLight.V3SP1WithHotfix\Binaries\WPF4\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GaraSoft\GalaSoft.MvvmLight.V3SP1WithHotfix\Binaries\WPF4\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\SpriteFontFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\XmlContentLoader.cs" />
+    <Compile Include="Models\XmlContentTypeResolver.cs" />
+    <Compile Include="PluginActivator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ModelControl.xaml.cs">
+      <DependentUpon>ModelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpriteFontControl.xaml.cs">
+      <DependentUpon>SpriteFontControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TextureControl.xaml.cs">
+      <DependentUpon>TextureControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Content.Studio\Content.Studio.csproj">
+      <Project>{8C39112B-CBB4-4F62-BC53-07588BE25BE9}</Project>
+      <Name>Content.Studio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Win.Framework\Win.Framework.csproj">
+      <Project>{35731EA3-AC76-4D34-906F-BF9BE7104C2A}</Project>
+      <Name>Win.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Win.Xna.Framework\Win.Xna.Framework.csproj">
+      <Project>{A66BD99A-C7A8-4068-93DB-818309300317}</Project>
+      <Name>Win.Xna.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Build\Xna.Framework.Content.Build.csproj">
+      <Project>{FCECBB91-A9B8-42D6-B724-BE22093AB23A}</Project>
+      <Name>Xna.Framework.Content.Build</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Pipeline\Xna.Framework.Content.Pipeline.csproj">
+      <Project>{234FFABB-8B31-4809-9FB7-DBE37A369A6D}</Project>
+      <Name>Xna.Framework.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework\Xna.Framework.csproj">
+      <Project>{AAA7FCD2-9EE8-417C-9786-D6394E40ECE2}</Project>
+      <Name>Xna.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\ModelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SpriteFontControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TextureControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

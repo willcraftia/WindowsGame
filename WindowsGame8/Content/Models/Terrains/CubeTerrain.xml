@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Terrains="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Terrains">
+  <Asset Type="Terrains:CubeTerrain">
+    <Heightmap>
+      <Reference>#Heightmap</Reference>
+    </Heightmap>
+    <UnitScale>0.1</UnitScale>
+    <AltitudeScale>32</AltitudeScale>
+    <BlockScale>32</BlockScale>
+    <TexCoordScale>2</TexCoordScale>
+    <Layer0>
+      <Alphamap>
+        <Reference>#LayerAlphamap0</Reference>
+      </Alphamap>
+      <Material>
+        <Reference>#LayerMaterial0</Reference>
+      </Material>
+    </Layer0>
+    <Layer1>
+      <Alphamap>
+        <Reference>#LayerAlphamap1</Reference>
+      </Alphamap>
+      <Material>
+        <Reference>#LayerMaterial1</Reference>
+      </Material>
+    </Layer1>
+    <Layer2>
+      <Alphamap>
+        <Reference>#LayerAlphamap2</Reference>
+      </Alphamap>
+      <Material>
+        <Reference>#LayerMaterial2</Reference>
+      </Material>
+    </Layer2>
+    <Layer3>
+      <Alphamap>
+        <Reference>#LayerAlphamap3</Reference>
+      </Alphamap>
+      <Material>
+        <Reference>#LayerMaterial3</Reference>
+      </Material>
+    </Layer3>
+    <Altitude0>
+      <MinAltitude>0</MinAltitude>
+      <MaxAltitude>8</MaxAltitude>
+      <TopMaterial>
+        <Reference>#AltitudeTopMaterial0</Reference>
+      </TopMaterial>
+      <SideMaterial>
+        <Reference>#AltitudeSideMaterial0</Reference>
+      </SideMaterial>
+    </Altitude0>
+    <Altitude1>
+      <MinAltitude>9</MinAltitude>
+      <MaxAltitude>16</MaxAltitude>
+      <TopMaterial>
+        <Reference>#AltitudeTopMaterial1</Reference>
+      </TopMaterial>
+      <SideMaterial>
+        <Reference>#AltitudeSideMaterial1</Reference>
+      </SideMaterial>
+    </Altitude1>
+    <Altitude2>
+      <MinAltitude>17</MinAltitude>
+      <MaxAltitude>24</MaxAltitude>
+      <TopMaterial>
+        <Reference>#AltitudeTopMaterial2</Reference>
+      </TopMaterial>
+      <SideMaterial>
+        <Reference>#AltitudeSideMaterial2</Reference>
+      </SideMaterial>
+    </Altitude2>
+    <Altitude3>
+      <MinAltitude>25</MinAltitude>
+      <MaxAltitude>32</MaxAltitude>
+      <TopMaterial>
+        <Reference>#AltitudeTopMaterial3</Reference>
+      </TopMaterial>
+      <SideMaterial>
+        <Reference>#AltitudeSideMaterial3</Reference>
+      </SideMaterial>
+    </Altitude3>
+  </Asset>
+  <ExternalReferences>
+    <ExternalReference ID="#Heightmap" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">Heightmap3.png</ExternalReference>
+    <ExternalReference ID="#LayerAlphamap0" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">Alphamap1.png</ExternalReference>
+    <ExternalReference ID="#LayerMaterial0" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/LayerMaterial0.xml</ExternalReference>
+    <ExternalReference ID="#LayerAlphamap1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">Alphamap2.png</ExternalReference>
+    <ExternalReference ID="#LayerMaterial1" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/LayerMaterial1.xml</ExternalReference>
+    <ExternalReference ID="#LayerAlphamap2" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">Alphamap3.png</ExternalReference>
+    <ExternalReference ID="#LayerMaterial2" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/LayerMaterial2.xml</ExternalReference>
+    <ExternalReference ID="#LayerAlphamap3" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">Alphamap4.png</ExternalReference>
+    <ExternalReference ID="#LayerMaterial3" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/LayerMaterial3.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeTopMaterial0" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/TopMaterial0.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeSideMaterial0" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/SideMaterial0.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeTopMaterial1" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/TopMaterial1.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeSideMaterial1" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/SideMaterial1.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeTopMaterial2" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/TopMaterial2.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeSideMaterial2" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/SideMaterial2.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeTopMaterial3" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/TopMaterial3.xml</ExternalReference>
+    <ExternalReference ID="#AltitudeSideMaterial3" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/SideMaterial3.xml</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes" xmlns:Cube.Scenes="Willcraftia.Xna.Foundation.Cube.Scenes">
+  <Asset Type="Scenes:CharacterActor">
+    <ActorModel Type="Cube.Scenes:CubeAnimateCharacterActorModel">
+      <MaxDrawDistance>0</MaxDrawDistance>
+      <NearTransparencyEnabled>true</NearTransparencyEnabled>
+      <CullingTransparencyEnabled>false</CullingTransparencyEnabled>
+      <CastShadowEnabled>true</CastShadowEnabled>
+      <ModelAssetName>Models/Characters/CubeAnimateCharacter</ModelAssetName>
+    </ActorModel>
+    <CollisionBoundsConfig>
+      <CollisionShapeConfigs>
+        <Item>
+          <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.BoxActorCollisionShapeFactory</Factory>
+          <StaticFriction>0.5</StaticFriction>
+          <DynamicFriction>0.5</DynamicFriction>
+          <Restitution>0.5</Restitution>
+        </Item>
+      </CollisionShapeConfigs>
+    </CollisionBoundsConfig>
+    <RigidBodyConfig>
+      <Enabled>true</Enabled>
+      <AutoDisabled>true</AutoDisabled>
+      <Immovable>false</Immovable>
+      <InertiaTensorEnabled>false</InertiaTensorEnabled>
+      <MassDensity>1</MassDensity>
+    </RigidBodyConfig>
+    <RigidBodyOrientationIgnored>true</RigidBodyOrientationIgnored>
+    <ActionSounds>
+      <Item>
+        <Key>
+          <ActionName>Footstep</ActionName>
+        </Key>
+        <Value>DefaultFootstep</Value>
+      </Item>
+      <Item>
+        <Key>
+          <ActionName>Jump</ActionName>
+        </Key>
+        <Value>Jump</Value>
+      </Item>
+    </ActionSounds>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes">
+  <Asset Type="Scenes:FluidSurfaceActor">
+    <ActorModel Type="Scenes:FluidSurfaceActorModel">
+      <MaxDrawDistance>0</MaxDrawDistance>
+      <NearTransparencyEnabled>false</NearTransparencyEnabled>
+      <CullingTransparencyEnabled>false</CullingTransparencyEnabled>
+      <CastShadowEnabled>false</CastShadowEnabled>
+      <ModelAssetName>Models/FluidSurfaces/FluidSurface</ModelAssetName>
+      <TextureSize>256</TextureSize>
+      <TextureAddress>Wrap</TextureAddress>
+    </ActorModel>
+  </Asset>
+</XnaContent>

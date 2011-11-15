@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:StaticMeshes="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.StaticMeshes">
+  <Asset Type="StaticMeshes:CubeBlock">
+    <UnitScale>0.1</UnitScale>
+    <BlockScale>16</BlockScale>
+    <SizeX>1</SizeX>
+    <SizeY>2</SizeY>
+    <SizeZ>1</SizeZ>
+    <BaseMaterial>
+      <Reference>#External1</Reference>
+    </BaseMaterial>
+  </Asset>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">..\..\Materials\CubeBlockMaterial.xml</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

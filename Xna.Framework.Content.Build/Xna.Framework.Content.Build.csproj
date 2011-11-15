@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCECBB91-A9B8-42D6-B724-BE22093AB23A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Willcraftia.Xna.Framework.Content.Build</RootNamespace>
+    <AssemblyName>Willcraftia.Xna.Framework.Content.Build</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyProcessorInfo.cs" />
+    <Compile Include="Asset.cs" />
+    <Compile Include="AssetBuildActionKind.cs" />
+    <Compile Include="ContentProject.cs" />
+    <Compile Include="AssemblyImporterInfo.cs" />
+    <Compile Include="IAssemblyReference.cs" />
+    <Compile Include="IContentBuilder.cs" />
+    <Compile Include="AdhocContentManager.cs" />
+    <Compile Include="IImporterInfo.cs" />
+    <Compile Include="IImporterInfoRegistry.cs" />
+    <Compile Include="ImporterInfoBase.cs" />
+    <Compile Include="ImporterInfoRegistry.cs" />
+    <Compile Include="IProcessorInfo.cs" />
+    <Compile Include="IProcessorInfoRegistry.cs" />
+    <Compile Include="ProcessorInfoBase.cs" />
+    <Compile Include="ProcessorInfoRegistry.cs" />
+    <Compile Include="ProjectReference.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reference.cs" />
+    <Compile Include="AssemblyReferenceImporterInfo.cs" />
+    <Compile Include="AssemblyReferenceProcessorInfo.cs" />
+    <Compile Include="TempContentBuilder.cs" />
+    <Compile Include="Tracer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xna.Framework.Content\Xna.Framework.Content.csproj">
+      <Project>{194A3983-C21B-4250-8A66-A09E4946F4DA}</Project>
+      <Name>Xna.Framework.Content</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

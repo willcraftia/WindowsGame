@@ -1,0 +1,115 @@
+﻿<Window x:Class="Willcraftia.Content.Studio.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:avalon="clr-namespace:AvalonDock;assembly=AvalonDock"
+        xmlns:frameworkMessaging="clr-namespace:Willcraftia.Win.Framework.Messaging;assembly=Willcraftia.Win.Framework"
+        xmlns:studioData="clr-namespace:Willcraftia.Content.Studio.Data"
+        xmlns:studioViewModels="clr-namespace:Willcraftia.Content.Studio.ViewModels"
+        xmlns:local="clr-namespace:Willcraftia.Content.Studio.Views"
+        Title="{Binding Title}" Height="800" Width="1024"
+        Loaded="OnLoaded"
+        Closed="OnClosed">
+    
+    <Window.Resources>
+        <studioData:DockableContentStateBooleanConverter x:Key="DockableContentStateBooleanConverter" />
+    </Window.Resources>
+    
+    <i:Interaction.Triggers>
+        <frameworkMessaging:DialogMessageTrigger SourceObject="{Binding Messenger}">
+            <frameworkMessaging:ShowMessageBoxAction/>
+        </frameworkMessaging:DialogMessageTrigger>
+        <local:CloseWindowMessageTrigger SourceObject="{Binding Messenger}">
+            <local:CloseWindowMessageAction/>
+        </local:CloseWindowMessageTrigger>
+        <local:ReferFileMessageTrigger SourceObject="{Binding Messenger}">
+            <local:ReferFileMessageAction/>
+        </local:ReferFileMessageTrigger>
+
+        <local:EditPluginSettingsMessageTrigger SourceObject="{Binding Messenger}">
+            <local:EditPluginSettingsMessageAction/>
+        </local:EditPluginSettingsMessageTrigger>
+
+        <local:EditProjectPropertiesMessageTrigger SourceObject="{Binding Messenger}">
+            <local:EditProjectPropertiesMessageAction/>
+        </local:EditProjectPropertiesMessageTrigger>
+        <local:NewProjectMessageTrigger SourceObject="{Binding Messenger}">
+            <local:NewProjectMessageAction/>
+        </local:NewProjectMessageTrigger>
+        <local:CloseProjectMessageTrigger SourceObject="{Binding Messenger}">
+            <local:CloseProjectMessageAction/>
+        </local:CloseProjectMessageTrigger>
+
+        <local:EditFolderMessageTrigger SourceObject="{Binding Messenger}">
+            <local:EditFolderMessageAction/>
+        </local:EditFolderMessageTrigger>
+        <local:EditAssetMessageTrigger SourceObject="{Binding Messenger}">
+            <local:EditAssetMessageAction/>
+        </local:EditAssetMessageTrigger>
+        <local:EditContentMessageTrigger SourceObject="{Binding Messenger}">
+            <local:EditContentMessageAction/>
+        </local:EditContentMessageTrigger>
+        <local:OpenRuntimeContentMessageTrigger SourceObject="{Binding Messenger}">
+            <local:OpenRuntimeContentMessageAction/>
+        </local:OpenRuntimeContentMessageTrigger>
+
+    </i:Interaction.Triggers>
+    
+    <DockPanel>
+
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New..." Command="{Binding CreateProjectCommand}"/>
+                <MenuItem Header="_Open..." Command="{Binding OpenProjectCommand}"/>
+                <Separator/>
+                <MenuItem Header="_Close" Command="{Binding CloseProjectCommand}"/>
+                <Separator/>
+                <MenuItem Header="_Save" Command="{Binding SaveProjectCommand}"/>
+                <MenuItem Header="Save _As..." Command="{Binding SaveProjectAsCommand}"/>
+                <Separator/>
+                <MenuItem Header="E_xit" Click="ExitMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Project">
+                <MenuItem Header="_Build" Command="{Binding BuildCommand}"/>
+                <Separator/>
+                <MenuItem Header="_Properties..." Command="{Binding EditProjectPropertiesCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Tools">
+                <MenuItem Header="_Plugin settings..." Command="{Binding EditPluginSettingsCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Window">
+                <MenuItem Header="Content _Explorer" Name="ExplorerMenuItem" IsCheckable="True"
+                          IsChecked="{Binding ElementName=ExplorerWindow, Path=State, Mode=OneWay, Converter={StaticResource DockableContentStateBooleanConverter}}"
+                          Click="ExplorerMenuItem_Click"/>
+                <MenuItem Header="_Console" Name="ConsoleMenuItem" IsCheckable="True"
+                          IsChecked="{Binding ElementName=ConsoleWindow, Path=State, Mode=OneWay, Converter={StaticResource DockableContentStateBooleanConverter}}"
+                          Click="ConsoleMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Debug">
+                <MenuItem Header="Run game" Command="{Binding RunGameCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <StatusBar DockPanel.Dock="Bottom" Height="Auto" MinHeight="20">
+            <StatusBarItem Name="StatusBarItem"/>
+        </StatusBar>
+
+        <Grid Name="MainGrid">
+            <avalon:DockingManager Name ="DockingManager">
+                <avalon:ResizingPanel Orientation="Vertical">
+                    <avalon:ResizingPanel Orientation="Horizontal">
+                        <avalon:DocumentPane/>
+                        <avalon:DockablePane avalon:ResizingPanel.ResizeWidth="500">
+                            <local:ExplorerWindow x:Name="ExplorerWindow" Title="Content Explorer"/>
+                        </avalon:DockablePane>
+                    </avalon:ResizingPanel>
+                    <avalon:DockablePane avalon:ResizingPanel.ResizeHeight="200">
+                        <local:ConsoleWindow x:Name="ConsoleWindow" Title="Console"/>
+                    </avalon:DockablePane>
+                </avalon:ResizingPanel>
+            </avalon:DockingManager>
+        </Grid>
+
+    </DockPanel>
+
+</Window>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Audio="Willcraftia.Xna.Framework.Content.Pipeline.Audio">
+  <Asset Type="Audio:AudioConfigDescription">
+    <XactEnabled Null="true" />
+    <XactSettingsFile Null="true" />
+    <WaveBank>
+      <Filename>Content/Audio/Test1Screen.xwb</Filename>
+      <IsStreaming>true</IsStreaming>
+      <Offset>0</Offset>
+      <Packetsize>16</Packetsize>
+    </WaveBank>
+    <SoundBank>
+      <Filename>Content/Audio/Test1Screen.xsb</Filename>
+    </SoundBank>
+    <BasicSounds Null="true" />
+  </Asset>
+</XnaContent>

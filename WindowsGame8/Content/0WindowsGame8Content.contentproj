@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{45DBAED9-DEF7-4D5C-A374-523773E9EB63}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <XNAContentPipelineTargetProfile>HiDef</XNAContentPipelineTargetProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Characters\CubeAnimateCharacter.xml">
+      <Name>CubeAnimateCharacter</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Actors\StaticMeshes\CubeBlock.xml">
+      <Name>CubeBlock</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Actors\StaticMeshes\CubeStairs.xml">
+      <Name>CubeStairs</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Actors\Terrains\CubeTerrain.xml">
+      <Name>CubeTerrain</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Actors\StaticMeshes\CubeTile.xml">
+      <Name>CubeTile</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Actors\FluidSurfaces\FluidSurface.xml">
+      <Name>FluidSurface</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Actors\SkyDomes\SkyDome.xml">
+      <Name>SkyDome</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Actors\VolumeFogs\VolumeFog.xml">
+      <Name>VolumeFog</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FluidSurfaces\FluidSurface.xml">
+      <Name>FluidSurface</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>FluidSurfaceModelProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Debugs\Fonts\Debug.spritefont">
+      <Name>Debug</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\ShadowMapEffect.fx">
+      <Name>ShadowMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\PcfSceneEffect.fx">
+      <Name>PcfSceneEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\GaussianBlurEffect.fx">
+      <Name>GaussianBlurEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VsmSceneEffect.fx">
+      <Name>VsmSceneEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\ClassicShadowSceneEffect.fx">
+      <Name>ClassicShadowSceneEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\MonochromeEffect.fx">
+      <Name>MonochromeEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\NegativeFilterEffect.fx">
+      <Name>NegativeFilterEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\NormalDepthMapEffect.fx">
+      <Name>NormalDepthMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\EdgeDetectionEffect.fx">
+      <Name>EdgeDetectionEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\DepthMapEffect.fx">
+      <Name>DepthMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\DofEffect.fx">
+      <Name>DofEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\SkyDomeModelEffect.fx">
+      <Name>SkyDomeModelEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Scenes\Test1Scene.xml">
+      <SubType>Designer</SubType>
+      <Name>Test1Scene</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SkyDome.png">
+      <Name>SkyDome</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VsmShadowMapEffect.fx">
+      <Name>VsmShadowMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\PssmClassicShadowSceneEffect.fx">
+      <Name>PssmClassicShadowSceneEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\PssmPcfSceneEffect.fx">
+      <Name>PssmPcfSceneEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\PssmVsmSceneEffect.fx">
+      <Name>PssmVsmSceneEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\FluidSurfaceModelEffect.fx">
+      <Name>FluidSurfaceModelEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\CloudLayerModelEffect.fx">
+      <Name>CloudLayerModelEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\CloudMapEffect.fx">
+      <Name>CloudMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\CloudLayerMapEffect.fx">
+      <Name>CloudLayerMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\SsaoMapEffect.fx">
+      <Name>SsaoMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\SsaoMapBlurEffect.fx">
+      <Name>SsaoMapBlurEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\SsaoEffect.fx">
+      <Name>SsaoEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\ScreenSpaceShadowEffect.fx">
+      <Name>ScreenSpaceShadowEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\BloomExtractEffect.fx">
+      <Name>BloomExtractEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\BloomEffect.fx">
+      <Name>BloomEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Screens\gamefont.spritefont">
+      <Name>gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="Screens\Fonts\Default.spritefont">
+      <Name>Default</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Screens\Textures\DefaultBackground.png">
+      <Name>DefaultBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Screens\Textures\Blank.png">
+      <Name>Blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Screens\Textures\Gradient.png">
+      <Name>Gradient</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\RandomNormal.png">
+      <Name>RandomNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\AudioConfig.xml">
+      <Name>AudioConfig</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>AudioConfigProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Scenes\Test1Scene.xml">
+      <Name>Test1Scene</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>AudioConfigProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Characters\Character.xml">
+      <Name>Character</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>AudioConfigProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Audio.xap">
+      <Name>Audio</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Characters\CubeAnimateCharacter.xml">
+      <Name>CubeAnimateCharacter</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeAnimateCharacterProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Models\StaticMeshes\CubeBlock.xml">
+      <Name>CubeBlock</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeBlockProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Models\Terrains\CubeTerrain.xml">
+      <Name>CubeTerrain</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeTerrainProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\StaticMeshes\CubeStairs.xml">
+      <Name>CubeStairs</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeStairsProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\StaticMeshes\CubeTile.xml">
+      <Name>CubeTile</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeTileProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Audio\Waves\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\GodRayEffect.fx">
+      <Name>GodRayEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\GodRayOcclusionMapEffect.fx">
+      <Name>GodRayOcclusionMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\FluidSurfaceNormalMapEffect.fx">
+      <Name>FluidSurfaceNormalMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VolumeFogEffect.fx">
+      <Name>VolumeFogEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\VolumeFogs\SceneValley_Fog.x">
+      <Name>SceneValley_Fog</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VolumeFogDepthMapEffect.fx">
+      <Name>VolumeFogDepthMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VolumeFogSceneDepthMapEffect.fx">
+      <Name>VolumeFogSceneDepthMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VolumeFogMapEffect.fx">
+      <Name>VolumeFogMapEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\VolumeFogBlendEffect.fx">
+      <Name>VolumeFogBlendEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Materials\CubeBlockMaterial.xml">
+      <Name>CubeBlockMaterial</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\CubeStairsBaseMaterial.xml">
+      <Name>CubeStairsBaseMaterial</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\CubeStairsSideMaterial.xml">
+      <Name>CubeStairsSideMaterial</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\CubeStairsStairMaterial.xml">
+      <Name>CubeStairsStairMaterial</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\CubeTileMaterial.xml">
+      <Name>CubeTileMaterial</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\LayerMaterial0.xml">
+      <Name>LayerMaterial0</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\LayerMaterial1.xml">
+      <Name>LayerMaterial1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\LayerMaterial2.xml">
+      <Name>LayerMaterial2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\LayerMaterial3.xml">
+      <Name>LayerMaterial3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\SideMaterial0.xml">
+      <Name>SideMaterial0</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\SideMaterial1.xml">
+      <Name>SideMaterial1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\SideMaterial2.xml">
+      <Name>SideMaterial2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\SideMaterial3.xml">
+      <Name>SideMaterial3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\TopMaterial0.xml">
+      <Name>TopMaterial0</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\TopMaterial1.xml">
+      <Name>TopMaterial1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\TopMaterial2.xml">
+      <Name>TopMaterial2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <None Include="Materials\TopMaterial3.xml">
+      <Name>TopMaterial3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <Compile Include="Models\Samples\elv_f8b1.fbx">
+      <Name>elv_f8b1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Samples\elv2.fbx">
+      <Name>elv2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Materials\CubeCharacterMaterial.xml">
+      <Name>CubeCharacterMaterial</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\SkyDomes\SkyDome.bridge.xml">
+      <Name>SkyDome.bridge</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>ModelBridgeProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Xna.Foundation.Content.Pipeline.Cube\Xna.Foundation.Content.Pipeline.Cube.csproj">
+      <Project>{DA5739F7-5FCB-4CEC-82DE-5B946155BA83}</Project>
+      <Name>Xna.Foundation.Content.Pipeline.Cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xna.Foundation.Content.Pipeline\Xna.Foundation.Content.Pipeline.csproj">
+      <Project>{4AAECDA3-79B3-4D4C-BA79-290EED47226B}</Project>
+      <Name>Xna.Foundation.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xna.Foundation.Cube\Xna.Foundation.Cube.csproj">
+      <Project>{A1740B3A-C4CB-4711-9980-1A5A85AB9DFF}</Project>
+      <Name>Xna.Foundation.Cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xna.Foundation\Xna.Foundation.csproj">
+      <Project>{1FC1AF7B-B154-4363-8970-47A5D22FC04D}</Project>
+      <Name>Xna.Foundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xna.Framework.Content.Pipeline.Audio\Xna.Framework.Content.Pipeline.Audio.csproj">
+      <Project>{A7225BBB-0251-4C2C-ACA4-84DEE55721DA}</Project>
+      <Name>Xna.Framework.Content.Pipeline.Audio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

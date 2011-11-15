@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED7E980C-CA4B-465F-9BF0-C143FB66013C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Willcraftia.Content.Studio.Plugin.Foundation</RootNamespace>
+    <AssemblyName>Willcraftia.Content.Studio.Plugin.Foundation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=1.3.3571.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\AvalonDock 1.3 (Build 3571)\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4, Version=3.0.0.30125, Culture=neutral, PublicKeyToken=6fcde8ddc3781e3e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GaraSoft\GalaSoft.MvvmLight.V3SP1WithHotfix\Binaries\WPF4\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GaraSoft\GalaSoft.MvvmLight.V3SP1WithHotfix\Binaries\WPF4\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit.Extended">
+      <HintPath>..\..\..\..\..\..\..\Bin\ExtendedWPFToolkit\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\ActorFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\SceneConfigFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\SceneConfigEdit.cs" />
+    <Compile Include="PluginActivator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\SceneConfigViewModel.cs" />
+    <Compile Include="Views\ActorControl.xaml.cs">
+      <DependentUpon>ActorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssetModelActorModelControl.xaml.cs">
+      <DependentUpon>AssetModelActorModelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ActorModelControlFactory.cs" />
+    <Compile Include="ViewModels\ActorModelControlRegistry.cs" />
+    <Compile Include="ViewModels\ActorModelViewModel.cs" />
+    <Compile Include="ViewModels\ActorModelViewModelFactory.cs" />
+    <Compile Include="ViewModels\ActorModelViewModelRegistry.cs" />
+    <Compile Include="ViewModels\ActorViewModel.cs" />
+    <Compile Include="ViewModels\AssetModelActorModelViewModel.cs" />
+    <Compile Include="ViewModels\CollisionBoundsConfigViewModel.cs" />
+    <Compile Include="Views\RuntimeActorControl.xaml.cs">
+      <DependentUpon>RuntimeActorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SceneConfigControl.xaml.cs">
+      <DependentUpon>SceneConfigControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\ActorControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AssetModelActorModelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RuntimeActorControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SceneConfigControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Content.Studio\Content.Studio.csproj">
+      <Project>{8C39112B-CBB4-4F62-BC53-07588BE25BE9}</Project>
+      <Name>Content.Studio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Win.Framework\Win.Framework.csproj">
+      <Project>{35731EA3-AC76-4D34-906F-BF9BE7104C2A}</Project>
+      <Name>Win.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Win.Xna.Framework\Win.Xna.Framework.csproj">
+      <Project>{A66BD99A-C7A8-4068-93DB-818309300317}</Project>
+      <Name>Win.Xna.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation.Content.Pipeline\Xna.Foundation.Content.Pipeline.csproj">
+      <Project>{4AAECDA3-79B3-4D4C-BA79-290EED47226B}</Project>
+      <Name>Xna.Foundation.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation.JigLib\Xna.Foundation.JigLib.csproj">
+      <Project>{416A4220-5358-4393-ADD2-7AA8B7B72798}</Project>
+      <Name>Xna.Foundation.JigLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation.Mock\Xna.Foundation.Mock.csproj">
+      <Project>{FB2674B1-61A4-4CFB-986B-CB2DBB5F6B06}</Project>
+      <Name>Xna.Foundation.Mock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation\Xna.Foundation.csproj">
+      <Project>{1FC1AF7B-B154-4363-8970-47A5D22FC04D}</Project>
+      <Name>Xna.Foundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Build\Xna.Framework.Content.Build.csproj">
+      <Project>{FCECBB91-A9B8-42D6-B724-BE22093AB23A}</Project>
+      <Name>Xna.Framework.Content.Build</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Pipeline\Xna.Framework.Content.Pipeline.csproj">
+      <Project>{234FFABB-8B31-4809-9FB7-DBE37A369A6D}</Project>
+      <Name>Xna.Framework.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content\Xna.Framework.Content.csproj">
+      <Project>{194A3983-C21B-4250-8A66-A09E4946F4DA}</Project>
+      <Name>Xna.Framework.Content</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Input\Xna.Framework.Input.csproj">
+      <Project>{CA440307-B4D3-4151-AA53-B44D148FDB2E}</Project>
+      <Name>Xna.Framework.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Physics\Xna.Framework.Physics.csproj">
+      <Project>{9E2D6D32-094D-4F7B-8871-EC5673D514D0}</Project>
+      <Name>Xna.Framework.Physics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework\Xna.Framework.csproj">
+      <Project>{AAA7FCD2-9EE8-417C-9786-D6394E40ECE2}</Project>
+      <Name>Xna.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

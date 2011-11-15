@@ -1,0 +1,2168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes">
+  <Asset Type="Scenes:SceneConfig">
+    <Actors>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CameraActorFactory</Factory>
+        <Name>free</Name>
+        <Position>50 80 50</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:CameraActor">
+          <Pov>
+            <Fov>0.7853982</Fov>
+            <AspectRatio>0</AspectRatio>
+            <NearPlaneDistance>0.1</NearPlaneDistance>
+            <FarPlaneDistance>10000</FarPlaneDistance>
+            <FocusDistance>3</FocusDistance>
+            <FocusRange>300</FocusRange>
+          </Pov>
+          <Active>false</Active>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CameraActorFactory</Factory>
+        <Name>satellite</Name>
+        <Position>409.6 1000 819.2</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:CameraActor">
+          <Pov>
+            <Fov>0.7853982</Fov>
+            <AspectRatio>0</AspectRatio>
+            <NearPlaneDistance>0.1</NearPlaneDistance>
+            <FarPlaneDistance>30000</FarPlaneDistance>
+            <FocusDistance>3</FocusDistance>
+            <FocusRange>300</FocusRange>
+          </Pov>
+          <Active>false</Active>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CameraActorFactory</Factory>
+        <Name>char</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:CameraActor">
+          <Pov>
+            <Fov>0.7853982</Fov>
+            <AspectRatio>0</AspectRatio>
+            <NearPlaneDistance>0.1</NearPlaneDistance>
+            <FarPlaneDistance>1000</FarPlaneDistance>
+            <FocusDistance>3</FocusDistance>
+            <FocusRange>300</FocusRange>
+          </Pov>
+          <Active>true</Active>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Player</Name>
+        <Position>0 80 100</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/Characters/CubeAnimateCharacter</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_0</Name>
+        <Position>0 80 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_1</Name>
+        <Position>2 80 2</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_2</Name>
+        <Position>4 80 4</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_3</Name>
+        <Position>6 80 6</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_4</Name>
+        <Position>8 80 8</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_5</Name>
+        <Position>10 80 10</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_6</Name>
+        <Position>12 80 12</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_7</Name>
+        <Position>14 80 14</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_8</Name>
+        <Position>16 80 16</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_9</Name>
+        <Position>18 80 18</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_10</Name>
+        <Position>20 80 20</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_11</Name>
+        <Position>22 80 22</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_12</Name>
+        <Position>24 80 24</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_13</Name>
+        <Position>26 80 26</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_14</Name>
+        <Position>28 80 28</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_15</Name>
+        <Position>30 80 30</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_16</Name>
+        <Position>32 80 32</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_17</Name>
+        <Position>34 80 34</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_18</Name>
+        <Position>36 80 36</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_19</Name>
+        <Position>38 80 38</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_20</Name>
+        <Position>40 80 40</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_21</Name>
+        <Position>42 80 42</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_22</Name>
+        <Position>44 80 44</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_23</Name>
+        <Position>46 80 46</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_24</Name>
+        <Position>48 80 48</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_25</Name>
+        <Position>50 80 50</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_26</Name>
+        <Position>52 80 52</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_27</Name>
+        <Position>54 80 54</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_28</Name>
+        <Position>56 80 56</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_29</Name>
+        <Position>58 80 58</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_30</Name>
+        <Position>60 80 60</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_31</Name>
+        <Position>62 80 62</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_32</Name>
+        <Position>64 80 64</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_33</Name>
+        <Position>66 80 66</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_34</Name>
+        <Position>68 80 68</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_35</Name>
+        <Position>70 80 70</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_36</Name>
+        <Position>72 80 72</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_37</Name>
+        <Position>74 80 74</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_38</Name>
+        <Position>76 80 76</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_39</Name>
+        <Position>78 80 78</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_40</Name>
+        <Position>80 80 80</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_41</Name>
+        <Position>82 80 82</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_42</Name>
+        <Position>84 80 84</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_43</Name>
+        <Position>86 80 86</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_44</Name>
+        <Position>88 80 88</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_45</Name>
+        <Position>90 80 90</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_46</Name>
+        <Position>92 80 92</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_47</Name>
+        <Position>94 80 94</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_48</Name>
+        <Position>96 80 96</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_49</Name>
+        <Position>98 80 98</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_50</Name>
+        <Position>100 80 100</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_51</Name>
+        <Position>102 80 102</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_52</Name>
+        <Position>104 80 104</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_53</Name>
+        <Position>106 80 106</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_54</Name>
+        <Position>108 80 108</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_55</Name>
+        <Position>110 80 110</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_56</Name>
+        <Position>112 80 112</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_57</Name>
+        <Position>114 80 114</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_58</Name>
+        <Position>116 80 116</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_59</Name>
+        <Position>118 80 118</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_60</Name>
+        <Position>120 80 120</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_61</Name>
+        <Position>122 80 122</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_62</Name>
+        <Position>124 80 124</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_63</Name>
+        <Position>126 80 126</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_64</Name>
+        <Position>128 80 128</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_65</Name>
+        <Position>130 80 130</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_66</Name>
+        <Position>132 80 132</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_67</Name>
+        <Position>134 80 134</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_68</Name>
+        <Position>136 80 136</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_69</Name>
+        <Position>138 80 138</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_70</Name>
+        <Position>140 80 140</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_71</Name>
+        <Position>142 80 142</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_72</Name>
+        <Position>144 80 144</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_73</Name>
+        <Position>146 80 146</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_74</Name>
+        <Position>148 80 148</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_75</Name>
+        <Position>150 80 150</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_76</Name>
+        <Position>152 80 152</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_77</Name>
+        <Position>154 80 154</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_78</Name>
+        <Position>156 80 156</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_79</Name>
+        <Position>158 80 158</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_80</Name>
+        <Position>160 80 160</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_81</Name>
+        <Position>162 80 162</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_82</Name>
+        <Position>164 80 164</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_83</Name>
+        <Position>166 80 166</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_84</Name>
+        <Position>168 80 168</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_85</Name>
+        <Position>170 80 170</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_86</Name>
+        <Position>172 80 172</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_87</Name>
+        <Position>174 80 174</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_88</Name>
+        <Position>176 80 176</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_89</Name>
+        <Position>178 80 178</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_90</Name>
+        <Position>180 80 180</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_91</Name>
+        <Position>182 80 182</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_92</Name>
+        <Position>184 80 184</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_93</Name>
+        <Position>186 80 186</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_94</Name>
+        <Position>188 80 188</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_95</Name>
+        <Position>190 80 190</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_96</Name>
+        <Position>192 80 192</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_97</Name>
+        <Position>194 80 194</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_98</Name>
+        <Position>196 80 196</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_99</Name>
+        <Position>198 80 198</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_0</Name>
+        <Position>21 65 151</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_1</Name>
+        <Position>23 65 153</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_2</Name>
+        <Position>25 65 155</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_3</Name>
+        <Position>27 65 157</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_4</Name>
+        <Position>29 65 159</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_5</Name>
+        <Position>31 65 161</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_6</Name>
+        <Position>33 65 163</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_7</Name>
+        <Position>35 65 165</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_8</Name>
+        <Position>37 65 167</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Zero_9</Name>
+        <Position>39 65 169</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_0</Name>
+        <Position>81 70 151</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_1</Name>
+        <Position>83 70 153</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_2</Name>
+        <Position>85 70 155</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_3</Name>
+        <Position>87 70 157</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_4</Name>
+        <Position>89 70 159</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_5</Name>
+        <Position>91 70 161</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_6</Name>
+        <Position>93 70 163</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_7</Name>
+        <Position>95 70 165</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_8</Name>
+        <Position>97 70 167</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Gravity_Reverse_9</Name>
+        <Position>99 70 169</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_0</Name>
+        <Position>111 70 151</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_1</Name>
+        <Position>113 70 153</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_2</Name>
+        <Position>115 70 155</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_3</Name>
+        <Position>117 70 157</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_4</Name>
+        <Position>119 70 159</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_5</Name>
+        <Position>121 70 161</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_6</Name>
+        <Position>123 70 163</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_7</Name>
+        <Position>125 70 165</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_8</Name>
+        <Position>127 70 167</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.CharacterActorFactory</Factory>
+        <Name>Cuboid_Fluid_9</Name>
+        <Position>129 70 169</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeBlock</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.StaticMeshActorFactory</Factory>
+        <Name>CubeStairs</Name>
+        <Position>20 69 90</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeStairs</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.StaticMeshActorFactory</Factory>
+        <Name>CubeTile</Name>
+        <Position>3 69 90</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/StaticMeshes/CubeTile</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.TerrainActorFactory</Factory>
+        <Name>Terrain</Name>
+        <Position>-1 0 -1</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/Terrains/CubeTerrain</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.SkyDomeActorFactory</Factory>
+        <Name>SkyDome</Name>
+        <Position>0 -5000 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/SkyDomes/SkyDome</AssetName>
+      </Item>
+      <Item Type="Scenes:AssetActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.FluidSurfaceActorFactory</Factory>
+        <Name>FluidSurface</Name>
+        <Position>352 22.8000011 352</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>320 1 320</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <AssetName>Actors/FluidSurfaces/FluidSurface</AssetName>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PhysicsVolumeActorFactory</Factory>
+        <Name>PhysicsVolume_Gravity_Zero</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:GravityVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>20 30 150</Min>
+              <Max>40 80 190</Max>
+            </BoundingBox>
+          </Shape>
+          <Characters />
+          <Gravity>0 0 0</Gravity>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PhysicsVolumeActorFactory</Factory>
+        <Name>PhysicsVolume_Gravity_Lunatic</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:GravityVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>50 30 150</Min>
+              <Max>70 120 190</Max>
+            </BoundingBox>
+          </Shape>
+          <Characters />
+          <Gravity>0 -1 0</Gravity>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PhysicsVolumeActorFactory</Factory>
+        <Name>PhysicsVolume_Gravity_Reverse</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:GravityVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>80 30 150</Min>
+              <Max>100 80 190</Max>
+            </BoundingBox>
+          </Shape>
+          <Characters />
+          <Gravity>0 10 0</Gravity>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PhysicsVolumeActorFactory</Factory>
+        <Name>PhysicsVolume_Fluid</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:FluidVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>110 30 150</Min>
+              <Max>130 70 190</Max>
+            </BoundingBox>
+          </Shape>
+          <Characters />
+          <Density>1</Density>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_EdgeDetection</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>-1 0 -1</Min>
+              <Max>819.2 100 819.2</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>false</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <FocusOverrideEnabled>false</FocusOverrideEnabled>
+              <FocusRange>3</FocusRange>
+              <FocusDistance>300</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>false</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>false</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>32</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>false</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>true</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>500</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>0</NormalSensitivity>
+              <DepthSensitivity>200</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>false</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>false</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>1 1 1</Color>
+              <Alpha>0</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_Ssao</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>20 30 100</Min>
+              <Max>40 80 140</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>false</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <FocusOverrideEnabled>false</FocusOverrideEnabled>
+              <FocusRange>3</FocusRange>
+              <FocusDistance>300</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>true</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>false</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>32</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>false</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>false</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>200</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>1</NormalSensitivity>
+              <DepthSensitivity>10</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>false</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>false</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>1 1 1</Color>
+              <Alpha>0</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_Dof</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>50 30 100</Min>
+              <Max>70 80 140</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>true</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <FocusOverrideEnabled>false</FocusOverrideEnabled>
+              <FocusRange>3</FocusRange>
+              <FocusDistance>300</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>false</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>false</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>32</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>false</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>false</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>200</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>1</NormalSensitivity>
+              <DepthSensitivity>10</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>false</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>false</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>1 1 1</Color>
+              <Alpha>0</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_Fluid</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>192 -137.2 192</Min>
+              <Max>512 22.8000011 512</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>true</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>0.2</BlurAmount>
+              <FocusOverrideEnabled>true</FocusOverrideEnabled>
+              <FocusRange>2</FocusRange>
+              <FocusDistance>1</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>false</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>false</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>32</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>false</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>false</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>200</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>1</NormalSensitivity>
+              <DepthSensitivity>10</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>false</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>true</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>0.6784314 0.847058833 0.9019608</Color>
+              <Alpha>0.7</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_GodRay</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>80 30 100</Min>
+              <Max>100 80 140</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>false</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <FocusOverrideEnabled>false</FocusOverrideEnabled>
+              <FocusRange>3</FocusRange>
+              <FocusDistance>300</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>false</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>true</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>2</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>false</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>false</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>200</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>1</NormalSensitivity>
+              <DepthSensitivity>10</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>false</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>false</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>1 1 1</Color>
+              <Alpha>0</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_Bloom</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>140 30 100</Min>
+              <Max>160 80 140</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>false</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <FocusOverrideEnabled>false</FocusOverrideEnabled>
+              <FocusRange>3</FocusRange>
+              <FocusDistance>300</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>false</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>false</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>32</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>false</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>false</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>200</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>1</NormalSensitivity>
+              <DepthSensitivity>10</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>true</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>false</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>1 1 1</Color>
+              <Alpha>0</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+      <Item Type="Scenes:ActualActorConfig">
+        <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.PostProcessVolumeActorFactory</Factory>
+        <Name>PostProcessVolume_Monochrome</Name>
+        <Position>0 0 0</Position>
+        <Orientation>0 0 0</Orientation>
+        <Scale>1 1 1</Scale>
+        <Enabled>true</Enabled>
+        <Visible>true</Visible>
+        <Actor Type="Scenes:PostProcessVolumeActor">
+          <Shape>
+            <BoundingBox>
+              <Min>110 30 100</Min>
+              <Max>130 80 140</Max>
+            </BoundingBox>
+          </Shape>
+          <Settings>
+            <DofEnabled>false</DofEnabled>
+            <DofSettings>
+              <MapScale>0.5</MapScale>
+              <FarPlaneDistance>300</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <FocusOverrideEnabled>false</FocusOverrideEnabled>
+              <FocusRange>3</FocusRange>
+              <FocusDistance>300</FocusDistance>
+            </DofSettings>
+            <SsaoEnabled>false</SsaoEnabled>
+            <SsaoSettings>
+              <MapScale>0.25</MapScale>
+              <FarPlaneDistance>100</FarPlaneDistance>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>2</BlurAmount>
+              <TotalStrength>1</TotalStrength>
+              <Strength>1</Strength>
+              <Falloff>0.0001</Falloff>
+              <Radius>8</Radius>
+            </SsaoSettings>
+            <GodRayEnabled>false</GodRayEnabled>
+            <GodRaySettings>
+              <MapScale>0.25</MapScale>
+              <Density>0.8</Density>
+              <Weight>0.9</Weight>
+              <Decay>0.8</Decay>
+              <Exposure>0.5</Exposure>
+              <SampleCount>32</SampleCount>
+            </GodRaySettings>
+            <MonochromeEnabled>true</MonochromeEnabled>
+            <MonochromeSettings>
+              <CbCr>0 0</CbCr>
+            </MonochromeSettings>
+            <EdgeDetectionEnabled>false</EdgeDetectionEnabled>
+            <EdgeDetectionSettings>
+              <MapScale>1</MapScale>
+              <FarPlaneDistance>200</FarPlaneDistance>
+              <EdgeWidth>1</EdgeWidth>
+              <EdgeIntensity>1</EdgeIntensity>
+              <NormalThreshold>0.1</NormalThreshold>
+              <DepthThreshold>0</DepthThreshold>
+              <NormalSensitivity>1</NormalSensitivity>
+              <DepthSensitivity>10</DepthSensitivity>
+              <EdgeColor>0 0 0</EdgeColor>
+            </EdgeDetectionSettings>
+            <BloomEnabled>false</BloomEnabled>
+            <BloomSettings>
+              <MapScale>0.25</MapScale>
+              <Threshold>0.25</Threshold>
+              <BlurRadius>1</BlurRadius>
+              <BlurAmount>4</BlurAmount>
+              <BloomIntensity>1.25</BloomIntensity>
+              <BaseIntensity>1</BaseIntensity>
+              <BloomSaturation>1</BloomSaturation>
+              <BaseSaturation>1</BaseSaturation>
+            </BloomSettings>
+            <ColorOverlapEnabled>false</ColorOverlapEnabled>
+            <ColorOverlapSettings>
+              <Color>1 1 1</Color>
+              <Alpha>0</Alpha>
+            </ColorOverlapSettings>
+          </Settings>
+        </Actor>
+      </Item>
+    </Actors>
+    <AmbientSounds>
+      <Item>
+        <Name>FieldBGM</Name>
+        <Enabled>true</Enabled>
+        <PlayableRadius>1000</PlayableRadius>
+        <SoundName>FieldBGM</SoundName>
+      </Item>
+      <Item>
+        <Name>River</Name>
+        <Enabled>true</Enabled>
+        <PlayableRadius>200</PlayableRadius>
+        <Emitter>
+          <Position>354 29 357</Position>
+          <Velocity>0 0 0</Velocity>
+          <Forward>0 1 0</Forward>
+          <Up>-1 0 0</Up>
+          <DopplerScale>1</DopplerScale>
+        </Emitter>
+        <SoundName>River</SoundName>
+      </Item>
+    </AmbientSounds>
+    <SceneSettings>
+      <ShadowSettings>
+        <Enabled>false</Enabled>
+        <Test>Vsm</Test>
+        <Size>512</Size>
+        <Format>Vector2</Format>
+        <DepthBias>0.005</DepthBias>
+        <Fov>0.7853982</Fov>
+        <AspectRatio>1</AspectRatio>
+        <NearPlaneDistance>0.1</NearPlaneDistance>
+        <FarPlaneDistance>500</FarPlaneDistance>
+        <BackwardLightVolumeRadius>10</BackwardLightVolumeRadius>
+        <Shape>Pssm</Shape>
+        <Vsm>
+          <BlurEnabled>true</BlurEnabled>
+          <BlurRadius>1</BlurRadius>
+          <BlurAmount>1</BlurAmount>
+        </Vsm>
+        <Pcf>
+          <KernelSize>2</KernelSize>
+        </Pcf>
+        <ScreenSpaceShadow>
+          <MapScale>1</MapScale>
+          <BlurEnabled>false</BlurEnabled>
+          <BlurRadius>1</BlurRadius>
+          <BlurAmount>1</BlurAmount>
+        </ScreenSpaceShadow>
+        <Pssm>
+          <SplitCount>3</SplitCount>
+          <SplitLambda>0.7</SplitLambda>
+        </Pssm>
+        <Lspsm>
+          <NewNFormulaEnabled>true</NewNFormulaEnabled>
+          <ExplicitNEnabled>false</ExplicitNEnabled>
+          <N>10</N>
+        </Lspsm>
+      </ShadowSettings>
+      <Time>0.25</Time>
+      <TimeScale>0.1</TimeScale>
+      <GlobalAmbientColor>0.4117647 0.4117647 0.4117647</GlobalAmbientColor>
+      <DirectionalLight0>
+        <Direction>-0 -0.707106769 0.707106769</Direction>
+        <AmbientColor>0 0 0</AmbientColor>
+        <DiffuseColor>1 1 1</DiffuseColor>
+        <SpecularColor>1 1 1</SpecularColor>
+        <ShadowColor>0.4117647 0.4117647 0.4117647</ShadowColor>
+        <Enabled>true</Enabled>
+        <ShadowEnabled>true</ShadowEnabled>
+      </DirectionalLight0>
+      <DirectionalLight1>
+        <Direction>0 -1 0</Direction>
+        <AmbientColor>0 0 0</AmbientColor>
+        <DiffuseColor>0 0 0</DiffuseColor>
+        <SpecularColor>0 0 0</SpecularColor>
+        <ShadowColor>0 0 0</ShadowColor>
+        <Enabled>false</Enabled>
+        <ShadowEnabled>false</ShadowEnabled>
+      </DirectionalLight1>
+      <DirectionalLight2>
+        <Direction>0 -1 0</Direction>
+        <AmbientColor>0 0 0</AmbientColor>
+        <DiffuseColor>0 0 0</DiffuseColor>
+        <SpecularColor>0 0 0</SpecularColor>
+        <ShadowColor>0 0 0</ShadowColor>
+        <Enabled>false</Enabled>
+        <ShadowEnabled>false</ShadowEnabled>
+      </DirectionalLight2>
+      <Fog>
+        <Color>1 1 1</Color>
+        <Start>500</Start>
+        <End>1000</End>
+        <Enabled>true</Enabled>
+      </Fog>
+    </SceneSettings>
+    <PlayerCharacterActorName>Player</PlayerCharacterActorName>
+    <SceneAudioAssetName>Audio/Scenes/Test1Scene</SceneAudioAssetName>
+    <CharacterAudioAssetName>Audio/Characters/Character</CharacterAudioAssetName>
+  </Asset>
+</XnaContent>

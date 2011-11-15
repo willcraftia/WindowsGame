@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes" xmlns:Cube.Scenes="Willcraftia.Xna.Foundation.Cube.Scenes">
+  <Asset Type="Scenes:StaticMeshActor">
+    <ActorModel Type="Cube.Scenes:CubeAssetModelActorModel">
+      <MaxDrawDistance>0</MaxDrawDistance>
+      <NearTransparencyEnabled>false</NearTransparencyEnabled>
+      <CullingTransparencyEnabled>false</CullingTransparencyEnabled>
+      <CastShadowEnabled>false</CastShadowEnabled>
+      <ModelAssetName>Models/StaticMeshes/CubeTile</ModelAssetName>
+    </ActorModel>
+    <CollisionBoundsConfig>
+      <CollisionShapeConfigs>
+        <Item>
+          <Factory>Willcraftia.Xna.Foundation.Scenes.Factories.MeshActorCollisionShapeFactory</Factory>
+          <StaticFriction>0.5</StaticFriction>
+          <DynamicFriction>0.5</DynamicFriction>
+          <Restitution>0.5</Restitution>
+        </Item>
+      </CollisionShapeConfigs>
+    </CollisionBoundsConfig>
+  </Asset>
+</XnaContent>

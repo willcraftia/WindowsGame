@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Bridges="Willcraftia.Xna.Foundation.Content.Pipeline.Bridges">
+  <Asset Type="Bridges:ModelBridge">
+    <Model>
+      <Reference>#External1</Reference>
+    </Model>
+    <Importer Null="true" />
+    <Processor>SkyDomeModelProcessor</Processor>
+    <Parameters>
+      <Item>
+        <Key>Scale</Key>
+        <Value Type="float">100</Value>
+      </Item>
+    </Parameters>
+  </Asset>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.NodeContent">SkyDome.fbx</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

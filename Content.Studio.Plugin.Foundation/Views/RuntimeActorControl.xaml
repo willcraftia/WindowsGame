@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Willcraftia.Content.Studio.Plugin.Foundation.Views.RuntimeActorControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:localForms="clr-namespace:Willcraftia.Content.Studio.Plugin.Foundation.Forms"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="200"
+             Loaded="OnLoaded"
+             Unloaded="OnUnloaded">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_View">
+                <MenuItem Header="_Show grid" IsCheckable="True"
+                          IsChecked="{Binding ElementName=ActorFormControl, Path=GridVisible}"/>
+                <MenuItem Header="_Enable lighting" IsCheckable="True"
+                          IsChecked="{Binding ElementName=ActorFormControl, Path=LightingEnabled}"/>
+                <Separator/>
+                <MenuItem Name="ResetModelOrientationMenuItem" Header="_Reset model orientation"
+                          Click="ResetModelOrientationMenuItem_Click"/>
+                <MenuItem Name="ResetCameraPositionMenuItem" Header="_Reset camera position"
+                          Click="ResetCameraPositionMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <WindowsFormsHost HorizontalAlignment="Stretch" Grid.Row="1">
+                <localForms:ActorFormControl x:Name="ActorFormControl"
+                                             BackColor="Black"
+                                             CameraPosition="0,0,10" MinZoomDistance="0.5" FarPlaneDistance="100"/>
+            </WindowsFormsHost>
+        </Grid>
+    </DockPanel>
+
+</UserControl>

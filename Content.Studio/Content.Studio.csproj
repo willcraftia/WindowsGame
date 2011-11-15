@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C39112B-CBB4-4F62-BC53-07588BE25BE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Willcraftia.Content.Studio</RootNamespace>
+    <AssemblyName>Willcraftia.Content.Studio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Documents and Settings\willcraftia\My Documents\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6BEE73ADC6B9FA2A2DF54E1B251B51C8448DDA87</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Content.Studio_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=1.3.3571.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\AvalonDock 1.3 (Build 3571)\AvalonDock.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4">
+      <HintPath>..\..\GaraSoft\GalaSoft.MvvmLight.V3SP1WithHotfix\Binaries\WPF4\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v4.0.30319\WPF\PresentationUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\..\GaraSoft\GalaSoft.MvvmLight.V3SP1WithHotfix\Binaries\WPF4\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppTraceListener.cs" />
+    <Compile Include="Data\DockableContentStateBooleanConverter.cs" />
+    <Compile Include="Forms\RuntimeContentFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\TextureFormControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\AssemblyNameEdit.cs" />
+    <Compile Include="Models\AssetEdit.cs" />
+    <Compile Include="Models\BuildLogger.cs" />
+    <Compile Include="Models\ContentFile.cs" />
+    <Compile Include="Models\ContentFolder.cs" />
+    <Compile Include="Models\ContentTypeResolverManager.cs" />
+    <Compile Include="Models\PluginSettingsEdit.cs" />
+    <Compile Include="Models\ProjectPropertiesEdit.cs" />
+    <Compile Include="Models\ProjectReferenceEdit.cs" />
+    <Compile Include="Models\ReferenceEdit.cs" />
+    <Compile Include="Models\Workspace.cs" />
+    <Compile Include="PluginFramework\GameRegistry.cs" />
+    <Compile Include="Models\IContentTypeResolver.cs" />
+    <Compile Include="Models\ContentTypeResolverRegistry.cs" />
+    <Compile Include="PluginFramework\IPluginActivator.cs" />
+    <Compile Include="PluginFramework\PluginActivatorRegistry.cs" />
+    <Compile Include="PluginFramework\PluginManager.cs" />
+    <Compile Include="Models\RuntimeContentTypeManager.cs" />
+    <Compile Include="ViewModels\CloseDocumentMessage.cs" />
+    <Compile Include="ViewModels\ContentFileViewModel.cs" />
+    <Compile Include="ViewModels\ContentFolderViewModel.cs" />
+    <Compile Include="Models\ContentImporterConverter.cs" />
+    <Compile Include="Models\ContentProcessorConverter.cs" />
+    <Compile Include="ViewModels\EditPluginSettingsMessage.cs" />
+    <Compile Include="ViewModels\EditProjectReferenceMessage.cs" />
+    <Compile Include="ViewModels\OpenRuntimeContentMessage.cs" />
+    <Compile Include="ViewModels\PluginAssemblyFileViewModel.cs" />
+    <Compile Include="ViewModels\ProjectReferenceEditViewModel.cs" />
+    <Compile Include="ViewModels\ReferPluginAssemblyFileMessage.cs" />
+    <Compile Include="ViewModels\RuntimeContentViewModel.cs" />
+    <Compile Include="ViewModels\TestMessenger.cs" />
+    <Compile Include="ViewModels\WorkspaceViewModel.cs" />
+    <Compile Include="Views\AssetControl.xaml.cs">
+      <DependentUpon>AssetControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CloseDocumentMessageAction.cs" />
+    <Compile Include="Views\CloseDocumentMessageTrigger.cs" />
+    <Compile Include="Views\ContentDocument.xaml.cs">
+      <DependentUpon>ContentDocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditAssetMessageTrigger.cs" />
+    <Compile Include="ViewModels\AssetEditViewModel.cs" />
+    <Compile Include="Views\CloseWindowMessageAction.cs" />
+    <Compile Include="Views\CloseWindowMessageTrigger.cs" />
+    <Compile Include="ViewModels\CloseProjectMessage.cs" />
+    <Compile Include="Views\CloseProjectMessageAction.cs" />
+    <Compile Include="Views\CloseProjectMessageTrigger.cs" />
+    <Compile Include="Models\ContentLoaderRegistry.cs" />
+    <Compile Include="Models\IContentLoader.cs" />
+    <Compile Include="Models\ContentLoaderManager.cs" />
+    <Compile Include="Views\AssetDialog.xaml.cs">
+      <DependentUpon>AssetDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\EditAssetMessage.cs" />
+    <Compile Include="ViewModels\CloseWindowMessage.cs" />
+    <Compile Include="ViewModels\EffectReferenceViewModel.cs" />
+    <Compile Include="ViewModels\ExternalReferenceViewModel.cs" />
+    <Compile Include="Views\EditPluginSettingsMessageAction.cs" />
+    <Compile Include="Views\EditPluginSettingsMessageTrigger.cs" />
+    <Compile Include="ViewModels\EditReferenceMessage.cs" />
+    <Compile Include="Views\EditProjectReferenceMessageAction.cs" />
+    <Compile Include="Views\EditProjectReferenceMessageTrigger.cs" />
+    <Compile Include="Views\EditReferenceMessageAction.cs" />
+    <Compile Include="Views\EditReferenceMessageTrigger.cs" />
+    <Compile Include="ViewModels\ContentViewModelBase.cs" />
+    <Compile Include="Views\EditContentMessageAction.cs" />
+    <Compile Include="Views\EditContentMessageTrigger.cs" />
+    <Compile Include="Views\EditFolderMessageTrigger.cs" />
+    <Compile Include="Models\PluginSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tracer.cs" />
+    <Compile Include="Views\ConsoleWindow.xaml.cs">
+      <DependentUpon>ConsoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConsoleWindowSettings.cs" />
+    <Compile Include="ViewModels\DialogMessageHelper.cs" />
+    <Compile Include="Views\ExplorerWindow.xaml.cs">
+      <DependentUpon>ExplorerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FolderDialog.xaml.cs">
+      <DependentUpon>FolderDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\EditFolderMessage.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindowSettings.cs" />
+    <Compile Include="Views\NewProjectDialog.xaml.cs">
+      <DependentUpon>NewProjectDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\NewProjectMessage.cs" />
+    <Compile Include="Views\NewProjectMessageTrigger.cs" />
+    <Compile Include="ViewModels\ReferFileMessage.cs" />
+    <Compile Include="ViewModels\EditContentMessage.cs" />
+    <Compile Include="Views\OpenRuntimeContentMessageAction.cs" />
+    <Compile Include="Views\OpenRuntimeContentMessageTrigger.cs" />
+    <Compile Include="Views\PluginAssemblyFileDialog.xaml.cs">
+      <DependentUpon>PluginAssemblyFileDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectPropertiesDialog.xaml.cs">
+      <DependentUpon>ProjectPropertiesDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectReferenceDialog.xaml.cs">
+      <DependentUpon>ProjectReferenceDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReferenceDialog.xaml.cs">
+      <DependentUpon>ReferenceDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReferFileMessageTrigger.cs" />
+    <Compile Include="ViewModels\PluginSettingsEditViewModel.cs" />
+    <Compile Include="Views\PluginSettingsDialog.xaml.cs">
+      <DependentUpon>PluginSettingsDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContentControlFactory.cs" />
+    <Compile Include="Views\ContentControlRegistry.cs" />
+    <Compile Include="ViewModels\ContentViewModelFactory.cs" />
+    <Compile Include="ViewModels\ContentViewModelRegistry.cs" />
+    <Compile Include="Views\ContentWindow.xaml.cs">
+      <DependentUpon>ContentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectPropertiesDialogOld.xaml.cs">
+      <DependentUpon>ProjectPropertiesDialogOld.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\EditProjectPropertiesMessage.cs" />
+    <Compile Include="Views\EditProjectPropertiesMessageTrigger.cs" />
+    <Compile Include="ViewModels\ProjectPropertiesEditViewModel.cs" />
+    <Compile Include="Views\PropertyGridPreBuildContentControl.xaml.cs">
+      <DependentUpon>PropertyGridPreBuildContentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReferAssetDialog.xaml.cs">
+      <DependentUpon>ReferAssetDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ReferenceEditViewModel.cs" />
+    <Compile Include="Views\RuntimeContentControlFactory.cs" />
+    <Compile Include="Views\RuntimeContentControlRegistry.cs" />
+    <Compile Include="Views\EditAssetMessageAction.cs" />
+    <Compile Include="Views\EditFolderMessageAction.cs" />
+    <Compile Include="Views\NewProjectMessageAction.cs" />
+    <Compile Include="Views\ReferFileMessageAction.cs" />
+    <Compile Include="Views\EditProjectPropertiesMessageAction.cs" />
+    <Compile Include="ViewModels\TextureContentReferenceViewModel.cs" />
+    <Compile Include="Views\ReferPluginAssemblyFileMessageAction.cs" />
+    <Compile Include="Views\ReferPluginAssemblyFileMessageTrigger.cs" />
+    <Compile Include="Views\RuntimeContentWindow.xaml.cs">
+      <DependentUpon>RuntimeContentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowHelper.cs" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Themes\Aero.NormalColor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssetDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AssetControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConsoleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ContentDocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ExplorerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FolderDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\NewProjectDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PluginAssemblyFileDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PluginSettingsDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ContentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProjectPropertiesDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProjectPropertiesDialogOld.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProjectReferenceDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PropertyGridPreBuildContentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReferAssetDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReferenceDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RuntimeContentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Win.Framework\Win.Framework.csproj">
+      <Project>{35731EA3-AC76-4D34-906F-BF9BE7104C2A}</Project>
+      <Name>Win.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Win.Xna.Framework\Win.Xna.Framework.csproj">
+      <Project>{A66BD99A-C7A8-4068-93DB-818309300317}</Project>
+      <Name>Win.Xna.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Build\Xna.Framework.Content.Build.csproj">
+      <Project>{FCECBB91-A9B8-42D6-B724-BE22093AB23A}</Project>
+      <Name>Xna.Framework.Content.Build</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Pipeline\Xna.Framework.Content.Pipeline.csproj">
+      <Project>{234FFABB-8B31-4809-9FB7-DBE37A369A6D}</Project>
+      <Name>Xna.Framework.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content\Xna.Framework.Content.csproj">
+      <Project>{194A3983-C21B-4250-8A66-A09E4946F4DA}</Project>
+      <Name>Xna.Framework.Content</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework\Xna.Framework.csproj">
+      <Project>{AAA7FCD2-9EE8-417C-9786-D6394E40ECE2}</Project>
+      <Name>Xna.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ReferIcon.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

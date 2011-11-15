@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03D598A2-5463-48B3-BF8A-AACCBD460FC7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenerateConfigXml</RootNamespace>
+    <AssemblyName>GenerateConfigXml</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xna.Foundation.Content.Pipeline.Cube\Xna.Foundation.Content.Pipeline.Cube.csproj">
+      <Project>{DA5739F7-5FCB-4CEC-82DE-5B946155BA83}</Project>
+      <Name>Xna.Foundation.Content.Pipeline.Cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation.Content.Pipeline\Xna.Foundation.Content.Pipeline.csproj">
+      <Project>{4AAECDA3-79B3-4D4C-BA79-290EED47226B}</Project>
+      <Name>Xna.Foundation.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation.Cube\Xna.Foundation.Cube.csproj">
+      <Project>{A1740B3A-C4CB-4711-9980-1A5A85AB9DFF}</Project>
+      <Name>Xna.Foundation.Cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Foundation\Xna.Foundation.csproj">
+      <Project>{1FC1AF7B-B154-4363-8970-47A5D22FC04D}</Project>
+      <Name>Xna.Foundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Audio\Xna.Framework.Audio.csproj">
+      <Project>{4E4F8661-75CA-4425-967E-93A82F7237F9}</Project>
+      <Name>Xna.Framework.Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Pipeline.Audio\Xna.Framework.Content.Pipeline.Audio.csproj">
+      <Project>{A7225BBB-0251-4C2C-ACA4-84DEE55721DA}</Project>
+      <Name>Xna.Framework.Content.Pipeline.Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content.Pipeline\Xna.Framework.Content.Pipeline.csproj">
+      <Project>{234FFABB-8B31-4809-9FB7-DBE37A369A6D}</Project>
+      <Name>Xna.Framework.Content.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework.Content\Xna.Framework.Content.csproj">
+      <Project>{194A3983-C21B-4250-8A66-A09E4946F4DA}</Project>
+      <Name>Xna.Framework.Content</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xna.Framework\Xna.Framework.csproj">
+      <Project>{AAA7FCD2-9EE8-417C-9786-D6394E40ECE2}</Project>
+      <Name>Xna.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

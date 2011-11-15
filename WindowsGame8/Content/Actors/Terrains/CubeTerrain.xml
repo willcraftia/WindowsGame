@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes" xmlns:Cube.Scenes="Willcraftia.Xna.Foundation.Cube.Scenes">
+  <Asset Type="Scenes:TerrainActor">
+    <ActorModel Type="Cube.Scenes:CubeTerrainActorModel">
+      <MaxDrawDistance>0</MaxDrawDistance>
+      <NearTransparencyEnabled>false</NearTransparencyEnabled>
+      <CullingTransparencyEnabled>false</CullingTransparencyEnabled>
+      <CastShadowEnabled>false</CastShadowEnabled>
+      <TerrainAssetName>Models/Terrains/CubeTerrain</TerrainAssetName>
+    </ActorModel>
+    <CollisionBoundsConfig>
+      <CollisionShapeConfigs>
+        <Item>
+          <Factory>Willcraftia.Xna.Foundation.Cube.Scenes.Factories.CubeHeightmapActorCollisionShapeFactory</Factory>
+          <StaticFriction>0.5</StaticFriction>
+          <DynamicFriction>0.5</DynamicFriction>
+          <Restitution>0.1</Restitution>
+        </Item>
+      </CollisionShapeConfigs>
+    </CollisionBoundsConfig>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes">
+  <Asset Type="Scenes:VolumeFogActor">
+    <ActorModel Type="Scenes:VolumeFogActorModel">
+      <MaxDrawDistance>0</MaxDrawDistance>
+      <NearTransparencyEnabled>false</NearTransparencyEnabled>
+      <CullingTransparencyEnabled>false</CullingTransparencyEnabled>
+      <CastShadowEnabled>false</CastShadowEnabled>
+      <ModelAssetName>Models/VolumeFogs/SceneValley_Fog</ModelAssetName>
+      <FogColor>0.6784314 0.847058833 0.9019608</FogColor>
+      <FogScale>0.05</FogScale>
+    </ActorModel>
+  </Asset>
+</XnaContent>

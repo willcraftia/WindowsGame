@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Characters="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Characters">
+  <Asset Type="Characters:CubeAnimateCharacter">
+    <Sprite>
+      <Reference>#Sprite</Reference>
+    </Sprite>
+    <SpriteWidth>16</SpriteWidth>
+    <SpriteHeight>16</SpriteHeight>
+    <ModelScale>1</ModelScale>
+    <CubeScale>0.1</CubeScale>
+    <Material>
+      <Reference>#Material</Reference>
+    </Material>
+    <FrontSprites>0 0 0 16</FrontSprites>
+    <BackSprites>32 0 32 16</BackSprites>
+    <LeftSprites>16 0 16 16</LeftSprites>
+    <RightSprites>48 0 48 16</RightSprites>
+    <Animations>
+      <Item>
+        <Key>Upstand</Key>
+        <Value>
+          <FramesPerSecond>1</FramesPerSecond>
+          <SpriteIndices>0</SpriteIndices>
+        </Value>
+      </Item>
+      <Item>
+        <Key>Walk</Key>
+        <Value>
+          <FramesPerSecond>2</FramesPerSecond>
+          <SpriteIndices>0 1</SpriteIndices>
+        </Value>
+      </Item>
+      <Item>
+        <Key>Air</Key>
+        <Value>
+          <FramesPerSecond>1</FramesPerSecond>
+          <SpriteIndices>0</SpriteIndices>
+        </Value>
+      </Item>
+    </Animations>
+  </Asset>
+  <ExternalReferences>
+    <ExternalReference ID="#Sprite" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">TamanegiRed.png</ExternalReference>
+    <ExternalReference ID="#Material" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">../../Materials/CubeCharacterMaterial.xml</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

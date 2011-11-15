@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="Willcraftia.Content.Studio.Plugin.Foundation.Cube.Views.CubeStairsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:extToolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+             xmlns:local="clr-namespace:Willcraftia.Content.Studio.Plugin.Foundation.Cube.Views"
+             mc:Ignorable="d"
+             d:DesignWidth="300">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Material" Background="LightGray" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Base:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="1" Grid.Column="1" DataContext="{Binding BaseMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Top:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="2" Grid.Column="1" DataContext="{Binding TopMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Bottom:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="3" Grid.Column="1" DataContext="{Binding BottomMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="North:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="4" Grid.Column="1" DataContext="{Binding NorthMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="South:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="5" Grid.Column="1" DataContext="{Binding SouthMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+            <Label Grid.Row="6" Grid.Column="0" Content="West:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="6" Grid.Column="1" DataContext="{Binding WestMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+            <Label Grid.Row="7" Grid.Column="0" Content="East:" VerticalAlignment="Center"/>
+            <local:CubeMaterialReferenceControl Grid.Row="7" Grid.Column="1" DataContext="{Binding EastMaterial}"
+                                                VerticalAlignment="Center" Margin="0,4,0,4"/>
+
+            <Label Grid.Row="8" Grid.ColumnSpan="2" Content="Size" Background="LightGray" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="9" Grid.Column="0" Content="Unit Scale:" VerticalAlignment="Center"/>
+            <extToolkit:DoubleUpDown Grid.Row="9" Grid.Column="1" Value="{Binding UnitScale}" FormatString="F2" Maximum="100" Minimum="0.1" Increment="0.1"
+                                     VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,4,0,4" Width="100"/>
+            <Label Grid.Row="10" Grid.Column="0" Content="Block Scale:" VerticalAlignment="Center"/>
+            <extToolkit:IntegerUpDown Grid.Row="10" Grid.Column="1" Value="{Binding BlockScale}" FormatString="F2" Maximum="100" Minimum="1"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,4,0,4" Width="100"/>
+            <Label Grid.Row="11" Grid.Column="0" Content="X:" VerticalAlignment="Center"/>
+            <extToolkit:IntegerUpDown Grid.Row="11" Grid.Column="1" Value="{Binding SizeX}" Maximum="100" Minimum="1"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,4,0,4" Width="100"/>
+            <Label Grid.Row="12" Grid.Column="0" Content="Y:" VerticalAlignment="Center"/>
+            <extToolkit:IntegerUpDown Grid.Row="12" Grid.Column="1" Value="{Binding SizeY}" Maximum="100" Minimum="1"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,4,0,4" Width="100"/>
+            <Label Grid.Row="13" Grid.Column="0" Content="Z:" VerticalAlignment="Center"/>
+            <extToolkit:IntegerUpDown Grid.Row="13" Grid.Column="1" Value="{Binding SizeZ}" Maximum="100" Minimum="1"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,4,0,4" Width="100"/>
+            <Label Grid.Row="14" Grid.Column="0" Content="Stair Count:" VerticalAlignment="Center"/>
+            <extToolkit:IntegerUpDown Grid.Row="14" Grid.Column="1" Value="{Binding StairCount}" Maximum="100" Minimum="1"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,4,0,4" Width="100"/>
+
+        </Grid>
+    </ScrollViewer>
+
+</UserControl>

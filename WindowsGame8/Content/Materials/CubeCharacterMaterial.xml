@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Materials="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials">
+  <Asset Type="Materials:CubeMaterial">
+    <Alpha>1</Alpha>
+    <DiffuseColor>1 1 1</DiffuseColor>
+    <EmissiveColor>0 0 0</EmissiveColor>
+    <SpecularColor>0 0 0</SpecularColor>
+    <SpecularPower>1</SpecularPower>
+    <VertexColorEnabled>true</VertexColorEnabled>
+  </Asset>
+  <ExternalReferences>
+  </ExternalReferences>
+</XnaContent>

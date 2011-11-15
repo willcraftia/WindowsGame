@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:StaticMeshes="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.StaticMeshes">
+  <Asset Type="StaticMeshes:CubeStairs">
+    <UnitScale>0.1</UnitScale>
+    <BlockScale>16</BlockScale>
+    <StairCount>2</StairCount>
+    <SizeX>16</SizeX>
+    <SizeY>2</SizeY>
+    <SizeZ>8</SizeZ>
+    <BaseMaterial>
+      <Reference>#External1</Reference>
+    </BaseMaterial>
+    <TopMaterial>
+      <Reference>#External2</Reference>
+    </TopMaterial>
+    <SouthMaterial>
+      <Reference>#External2</Reference>
+    </SouthMaterial>
+    <WestMaterial>
+      <Reference>#External3</Reference>
+    </WestMaterial>
+    <EastMaterial>
+      <Reference>#External3</Reference>
+    </EastMaterial>
+  </Asset>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">..\..\Materials\CubeStairsBaseMaterial.xml</ExternalReference>
+    <ExternalReference ID="#External2" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">..\..\Materials\CubeStairsStairMaterial.xml</ExternalReference>
+    <ExternalReference ID="#External3" TargetType="Willcraftia.Xna.Foundation.Content.Pipeline.Cube.Materials.CubeMaterial">..\..\Materials\CubeStairsSideMaterial.xml</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

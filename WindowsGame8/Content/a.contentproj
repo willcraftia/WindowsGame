@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <Configuration>Release</Configuration>
+    <Platform>x86</Platform>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <XNAContentPipelineTargetProfile>HiDef</XNAContentPipelineTargetProfile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Models\StaticMeshes\CubeBlock.xml">
+      <Link>CubeBlock.xml</Link>
+      <Name>CubeBlock</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeBlockProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\StaticMeshes\CubeStairs.xml">
+      <Link>CubeStairs.xml</Link>
+      <Name>CubeStairs</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>CubeStairsProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Documents and Settings\willcraftia\My Documents\Visual Studio 2010\Projects\WindowsGame8\Xna.Foundation.Content.Pipeline.Cube\Xna.Foundation.Content.Pipeline.Cube.csproj" />
+    <ProjectReference Include="C:\Documents and Settings\willcraftia\My Documents\Visual Studio 2010\Projects\WindowsGame8\Xna.Foundation.Content.Pipeline\Xna.Foundation.Content.Pipeline.csproj" />
+    <ProjectReference Include="C:\Documents and Settings\willcraftia\My Documents\Visual Studio 2010\Projects\WindowsGame8\Xna.Foundation.Cube\Xna.Foundation.Cube.csproj" />
+    <ProjectReference Include="C:\Documents and Settings\willcraftia\My Documents\Visual Studio 2010\Projects\WindowsGame8\Xna.Foundation\Xna.Foundation.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v4.0\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+</Project>

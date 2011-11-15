@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Scenes="Willcraftia.Xna.Foundation.Scenes">
+  <Asset Type="Scenes:SkyDomeActor">
+    <ActorModel Type="Scenes:SkyDomeActorModel">
+      <MaxDrawDistance>0</MaxDrawDistance>
+      <NearTransparencyEnabled>false</NearTransparencyEnabled>
+      <CullingTransparencyEnabled>false</CullingTransparencyEnabled>
+      <CastShadowEnabled>false</CastShadowEnabled>
+      <ModelAssetName>Models/SkyDomes/SkyDome.bridge</ModelAssetName>
+      <SunPower>500</SunPower>
+      <AdjustBlenderRadiusEnabled>true</AdjustBlenderRadiusEnabled>
+      <SkyMapDefinitions>
+        <Item>
+          <Key>SkyDome</Key>
+          <Value>Textures/SkyDome</Value>
+        </Item>
+      </SkyMapDefinitions>
+      <ActiveSkyMapName>SkyDome</ActiveSkyMapName>
+    </ActorModel>
+  </Asset>
+</XnaContent>
